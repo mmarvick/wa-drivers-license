@@ -25,8 +25,15 @@ function calculate (form) {
 	var license = last+first+middle+yearcode+check+monthcode+daycode;
 	var altlicense = last+first+middle+yearcode+altcheck+altmonthcode+daycode;
 
-	alert(license + '\n' + altlicense);
+	document.getElementById("info-col").style.visibility="visible";
+	document.getElementById("info").innerHTML = generateHTML(license, altlicense);
 };
+
+function generateHTML(license, altlicense) {
+	html = "<h4>License Number:</h4>" + license + "<br /><br /><h4>Alternate License Number:</h4>" + altlicense;
+	//html = license;
+	return html;
+}
 
 function formatname(value, length) {
 	name = value.toUpperCase().trim()

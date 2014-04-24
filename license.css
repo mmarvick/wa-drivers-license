@@ -1,3 +1,29 @@
-.adapted {
+/*.adapted {
 	margin-top: 30px;
+}*/
+
+.eq-height {
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+
+.col-wrap {
+	overflow: hidden;
+}
+
+.well {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.form-and-resp {
+	margin-top: 20px;
+}
+
+#info-col {
+	visibility: hidden;
+}
+
+.panel {
+	height: 100%;
 }
