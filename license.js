@@ -13,13 +13,19 @@ function calculate (form) {
 	var first = formatname(form.firstname.value, 1);
 	var middle = formatname(form.middlename.value, 1);
 	var last = formatname(form.lastname.value, 5);
+
 	var monthcode = getmonthcode(month);
-	var altmonthcode = getaltmonthcode(month);
 	var daycode = getdaycode(day);
 	var yearcode = getyearcode(year);
 	var check = getcheck(yearcode, monthcode, daycode, first, middle, last);
+
+	var altmonthcode = getaltmonthcode(month);
 	var altcheck = getcheck(yearcode, altmonthcode, daycode, first, middle, last);
-	alert(last+first+middle+yearcode+check+monthcode+daycode + '\n' + last+first+middle+yearcode+altcheck+altmonthcode+daycode);
+
+	var license = last+first+middle+yearcode+check+monthcode+daycode;
+	var altlicense = last+first+middle+yearcode+altcheck+altmonthcode+daycode;
+
+	alert(license + '\n' + altlicense);
 };
 
 function formatname(value, length) {
