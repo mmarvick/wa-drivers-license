@@ -17,5 +17,5 @@
 }
 
 #info-col {
-	visibility: hidden;
+	display: none;
 }

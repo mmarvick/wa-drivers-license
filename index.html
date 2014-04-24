@@ -10,7 +10,7 @@
 	<body>
 		<div class = "form-and-resp">
 			<div class = "col-wrap">
-				<div class = "eq-height col-sm-6">
+				<div class = "eq-height col-sm-12" id="form-col">
 					<div class = "panel panel-primary panel-left">
 						<div class="panel-heading">
               				<h3 class="panel-title">Driver's License Info</h3>
@@ -58,21 +58,19 @@
 										<td><input type="number" name="year" size="4" maxlength="4"></td>
 									</tr>
 								</table>
-								<input type="button" value="Calculate!" onClick="calculate(this.form)">
+								<input type="button" class="btn btn-primary" value="Calculate!" onClick="calculate(this.form)">
 							</form>
 						</div>
 					</div>
 				</div>
-				<div id="info-col">
-					<div class="eq-height col-sm-6">
-						<div class="panel panel-primary panel-right">
-							<div class="panel-heading">
-	              				<h3 class="panel-title">Results</h3>
-	            			</div>
-	            			<div class="panel-body">
-	            				<div id="info">
-							
-								</div>
+				<div class="eq-height col-sm-6" id="info-col">
+					<div class="panel panel-primary panel-right">
+						<div class="panel-heading">
+              				<h3 class="panel-title">Results</h3>
+            			</div>
+            			<div class="panel-body">
+            				<div id="info">
+						
 							</div>
 						</div>
 					</div>
