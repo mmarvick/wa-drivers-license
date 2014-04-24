@@ -8,61 +8,71 @@
 	</head>
 
 	<body>
-		<div class = "well form-and-resp">
+		<div class = "form-and-resp">
 			<div class = "col-wrap">
 				<div class = "eq-height col-sm-6">
-					<div class = "panel panel-default">
-						<form name="license" action="">
-							<table>
-								<tr>
-									<td>First Name:</td>
-									<td><input type="text" name="firstname"></td>
-								</tr>
-								<tr>
-									<td>Last Name:</td>
-									<td><input type="text" name="lastname"></td>
-								</tr>
-								<tr>
-									<td>Middle Name:</td>
-									<td><input type="text" name="middlename"></td>
-								</tr>
-								<tr>
-									<td>Birth Day:</td>
-									<td><input type="number" name="day" size="2" maxlength="2"></td>
-								</tr>
-								<tr>
-									<td>Birth Month:</td>
-									<td>
-										<select name="month">
-											<option value="1">January</option>
-											<option value="2">February</option>
-											<option value="3">March</option>
-											<option value="4">April</option>
-											<option value="5">May</option>
-											<option value="6">June</option>
-											<option value="7">July</option>
-											<option value="8">August</option>
-											<option value="9">September</option>
-											<option value="10">October</option>
-											<option value="11">November</option>
-											<option value="12">December</option>
-										</select>
-									</td>	
-								</tr>
-								<tr>
-									<td>Birth Year:</td>
-									<td><input type="number" name="year" size="4" maxlength="4"></td>
-								</tr>
-							</table>
-							<input type="button" value="Calculate!" onClick="calculate(this.form)">
-						</form>
+					<div class = "panel panel-primary panel-left">
+						<div class="panel-heading">
+              				<h3 class="panel-title">Driver's License Info</h3>
+            			</div>
+            			<div class="panel-body">
+							<form name="license" action="">
+								<table>
+									<tr>
+										<td>First Name:</td>
+										<td><input type="text" name="firstname"></td>
+									</tr>
+									<tr>
+										<td>Last Name:</td>
+										<td><input type="text" name="lastname"></td>
+									</tr>
+									<tr>
+										<td>Middle Name:</td>
+										<td><input type="text" name="middlename"></td>
+									</tr>
+									<tr>
+										<td>Birth Day:</td>
+										<td><input type="number" name="day" size="2" maxlength="2"></td>
+									</tr>
+									<tr>
+										<td>Birth Month:</td>
+										<td>
+											<select name="month">
+												<option value="1">January</option>
+												<option value="2">February</option>
+												<option value="3">March</option>
+												<option value="4">April</option>
+												<option value="5">May</option>
+												<option value="6">June</option>
+												<option value="7">July</option>
+												<option value="8">August</option>
+												<option value="9">September</option>
+												<option value="10">October</option>
+												<option value="11">November</option>
+												<option value="12">December</option>
+											</select>
+										</td>	
+									</tr>
+									<tr>
+										<td>Birth Year:</td>
+										<td><input type="number" name="year" size="4" maxlength="4"></td>
+									</tr>
+								</table>
+								<input type="button" value="Calculate!" onClick="calculate(this.form)">
+							</form>
+						</div>
 					</div>
 				</div>
 				<div id="info-col">
 					<div class="eq-height col-sm-6">
-						<div class="panel panel-default">
-							<div id="info">
+						<div class="panel panel-primary panel-right">
+							<div class="panel-heading">
+	              				<h3 class="panel-title">Results</h3>
+	            			</div>
+	            			<div class="panel-body">
+	            				<div id="info">
 							
+								</div>
 							</div>
 						</div>
 					</div>
