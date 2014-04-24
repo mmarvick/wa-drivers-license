@@ -53,7 +53,7 @@ function getcheck(yearcode, monthcode, daycode, first, middle, last) {
 		multiplier = i%2 == 0 ? +1 : -1;
 		check += getnumcode(checkstr[i]) * multiplier; 
 	}
-	return check % 10;
+	return ((check % 10)+10)%10;
 }
 
 function getyearcode(year) {
