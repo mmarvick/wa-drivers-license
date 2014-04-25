@@ -1,8 +1,3 @@
-.eq-height {
-	margin-bottom: -99999px;
-	padding-bottom: 99999px;
-}
-
 .col-wrap {
 	overflow: hidden;
 }
@@ -20,9 +15,6 @@
 	display: none;
 }
 
-#panel-right {
-	height: auto;
-}
 
 tr {
 	line-height: 35px;
