@@ -8,10 +8,13 @@
 	</head>
 
 	<body>
+		<div class="heading">
+			<h1> Washington State Driver's License Generator </h1>
+		</div>
 		<div class = "form-and-resp">
 			<div class = "col-wrap">
 				<div class = "eq-height col-sm-12" id="form-col">
-					<div class = "panel panel-primary panel-left">
+					<div class = "panel panel-primary" id = "panel-left">
 						<div class="panel-heading">
               				<h3 class="panel-title">Driver's License Info</h3>
             			</div>
@@ -31,8 +34,8 @@
 										<td><input type="text" name="middlename"></td>
 									</tr>
 									<tr>
-										<td>Birth Day:</td>
-										<td><input type="number" name="day" size="2" maxlength="2"></td>
+										<td>Birth Year:</td>
+										<td><input type="number" name="year" size="4" maxlength="4"></td>
 									</tr>
 									<tr>
 										<td>Birth Month:</td>
@@ -54,9 +57,10 @@
 										</td>	
 									</tr>
 									<tr>
-										<td>Birth Year:</td>
-										<td><input type="number" name="year" size="4" maxlength="4"></td>
-									</tr>
+										<td>Birth Day:</td>
+										<td><input type="number" name="day" size="2" maxlength="2"></td>
+									</tr>									
+
 								</table>
 								<input type="button" class="btn btn-primary" value="Calculate!" onClick="calculate(this.form)">
 							</form>
@@ -64,7 +68,7 @@
 					</div>
 				</div>
 				<div class="eq-height col-sm-6" id="info-col">
-					<div class="panel panel-primary panel-right">
+					<div class="panel panel-primary" id = "panel-right">
 						<div class="panel-heading">
               				<h3 class="panel-title">Results</h3>
             			</div>

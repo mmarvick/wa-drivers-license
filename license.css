@@ -19,3 +19,19 @@
 #info-col {
 	display: none;
 }
+
+#panel-right {
+	height: auto;
+}
+
+tr {
+	line-height: 35px;
+}
+
+td {
+	width: 100px;
+}
+
+.heading {
+	text-align: center;
+}
